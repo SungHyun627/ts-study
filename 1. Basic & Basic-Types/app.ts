@@ -55,3 +55,33 @@ console.log(favoriteActivities, favoriteNumbers);
 /* Tuple Type */
 let person: [number, string];
 person = [1, 'good'];
+
+/* Enum */
+enum Role1 {
+  ADMIN,
+  READ_ONLY,
+  AUTHOR,
+}
+
+let employee = {
+  name: 'Max',
+  role: Role1.ADMIN,
+};
+
+enum Role2 {
+  ADMIN = 6,
+  READ_ONLY,
+  AUTHOR,
+}
+
+enum Role3 {
+  ADMIN = 10,
+  READ_ONLY = 100,
+  AUTHOR = 1000,
+}
+
+enum Role4 {
+  ADMIN = 'ADMIN',
+  READ_ONLY = 100,
+  AUTHOR = 3,
+}
