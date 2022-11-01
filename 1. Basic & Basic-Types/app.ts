@@ -85,3 +85,10 @@ enum Role4 {
   READ_ONLY = 100,
   AUTHOR = 3,
 }
+
+/* Any Type */
+let notSure: any = 4;
+notSure = 'hi';
+notSure = false;
+
+let list: any[] = [1, true, 'free'];

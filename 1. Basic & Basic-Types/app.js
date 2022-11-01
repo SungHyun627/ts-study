@@ -68,3 +68,8 @@ var Role4;
     Role4[Role4["READ_ONLY"] = 100] = "READ_ONLY";
     Role4[Role4["AUTHOR"] = 3] = "AUTHOR";
 })(Role4 || (Role4 = {}));
+/* Any Type */
+var notSure = 4;
+notSure = 'hi';
+notSure = false;
+var list = [1, true, 'free'];
