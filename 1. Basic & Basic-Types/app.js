@@ -73,3 +73,14 @@ var notSure = 4;
 notSure = 'hi';
 notSure = false;
 var list = [1, true, 'free'];
+/* void */
+function warnUser() {
+    console.log('waring message');
+}
+/* Null and Undefined */
+var a = undefined;
+var n = null;
+/* Never */
+function error(message) {
+    throw new Error(message);
+}

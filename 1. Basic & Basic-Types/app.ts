@@ -92,3 +92,17 @@ notSure = 'hi';
 notSure = false;
 
 let list: any[] = [1, true, 'free'];
+
+/* void */
+function warnUser(): void {
+  console.log('waring message');
+}
+
+/* Null and Undefined */
+let a: undefined = undefined;
+let n: null = null;
+
+/* Never */
+function error(message: string): never {
+  throw new Error(message);
+}
