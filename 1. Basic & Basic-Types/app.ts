@@ -44,3 +44,10 @@ const person4: {
 } = { name: 'Max', age: 30 };
 
 console.log(person4);
+
+/* Array Types */
+let favoriteActivities: string[];
+let favoriteNumbers: Array<number>;
+favoriteActivities = ['Sports'];
+favoriteNumbers = [1, 2, 3];
+console.log(favoriteActivities, favoriteNumbers);
