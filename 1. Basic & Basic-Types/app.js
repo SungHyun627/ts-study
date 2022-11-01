@@ -30,3 +30,12 @@ var person3 = {
 console.log(person3);
 var person4 = { name: 'Max', age: 30 };
 console.log(person4);
+/* Array Types */
+var favoriteActivities;
+var favoriteNumbers;
+favoriteActivities = ['Sports'];
+favoriteNumbers = [1, 2, 3];
+console.log(favoriteActivities, favoriteNumbers);
+/* Tuple Type */
+var person;
+person = [1, 'good'];

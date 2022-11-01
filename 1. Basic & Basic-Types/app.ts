@@ -51,3 +51,7 @@ let favoriteNumbers: Array<number>;
 favoriteActivities = ['Sports'];
 favoriteNumbers = [1, 2, 3];
 console.log(favoriteActivities, favoriteNumbers);
+
+/* Tuple Type */
+let person: [number, string];
+person = [1, 'good'];
