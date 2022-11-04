@@ -18,7 +18,7 @@ console.log(user1);
 user1.greet('Hi there -');
 
 interface Greetable {
-  name: string;
+  readonly name: string;
   greet(pharse: string): void;
 }
 
