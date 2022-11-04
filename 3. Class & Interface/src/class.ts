@@ -87,3 +87,28 @@ accounting.mostRecentReport = 'Here is the last report';
 
 const employee1 = Department.createEmployee('Max');
 console.log(employee1, Department.fiscalYear);
+
+class ManagementDepartment extends Department {
+  private static instance: ManagementDepartment;
+
+  private constructor(id: string, private reports: string[]) {
+    super(id, 'Management');
+  }
+
+  static getInstance() {
+    if (ManagementDepartment.instance) {
+      return this.instance;
+    }
+    this.instance = new ManagementDepartment('d4', []);
+
+    console.log(1);
+    return this.instance;
+  }
+
+  printReport() {
+    console.log(this.reports);
+  }
+}
+
+const management = ManagementDepartment.getInstance();
+console.log(management);

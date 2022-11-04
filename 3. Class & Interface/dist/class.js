@@ -73,4 +73,23 @@ console.log(accounting.mostRecentReport);
 accounting.mostRecentReport = 'Here is the last report';
 const employee1 = Department.createEmployee('Max');
 console.log(employee1, Department.fiscalYear);
+class ManagementDepartment extends Department {
+    constructor(id, reports) {
+        super(id, 'Management');
+        this.reports = reports;
+    }
+    static getInstance() {
+        if (ManagementDepartment.instance) {
+            return this.instance;
+        }
+        this.instance = new ManagementDepartment('d4', []);
+        console.log(1);
+        return this.instance;
+    }
+    printReport() {
+        console.log(this.reports);
+    }
+}
+const management = ManagementDepartment.getInstance();
+console.log(management);
 //# sourceMappingURL=class.js.map
