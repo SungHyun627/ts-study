@@ -38,17 +38,19 @@ const Kim = new Korean('Hi');
 console.log(Kim);
 
 interface Named {
-  readonly name: string;
+  readonly name?: string;
+  outputName?: string;
+  myMethod?(): void;
 }
 
-interface Greetable {
+interface Greetable1 {
   greet(pharse: string): void;
 }
 
-class Niceman implements Greetable, Named {
-  name: string;
-  constructor(n: string) {
-    this.name = n;
+class Niceman implements Greetable1, Named {
+  name?: string;
+  constructor(n?: string) {
+    if (n) this.name = n;
   }
   greet(pharse: string) {
     console.log(`${pharse} from ${this.name}`);
