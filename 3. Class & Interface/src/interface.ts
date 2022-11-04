@@ -36,3 +36,21 @@ class Korean implements Greetable {
 let Sunghyun: Greetable;
 const Kim = new Korean('Hi');
 console.log(Kim);
+
+interface Named {
+  readonly name: string;
+}
+
+interface Greetable {
+  greet(pharse: string): void;
+}
+
+class Niceman implements Greetable, Named {
+  name: string;
+  constructor(n: string) {
+    this.name = n;
+  }
+  greet(pharse: string) {
+    console.log(`${pharse} from ${this.name}`);
+  }
+}

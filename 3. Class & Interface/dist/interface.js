@@ -20,4 +20,12 @@ class Korean {
 let Sunghyun;
 const Kim = new Korean('Hi');
 console.log(Kim);
+class Niceman {
+    constructor(n) {
+        this.name = n;
+    }
+    greet(pharse) {
+        console.log(`${pharse} from ${this.name}`);
+    }
+}
 //# sourceMappingURL=interface.js.map
