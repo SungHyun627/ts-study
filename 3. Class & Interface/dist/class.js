@@ -41,8 +41,15 @@ class AccountingDepartment extends Department {
     printReports() {
         console.log(this.reports);
     }
+    addEmployee(name) {
+        if (name === 'Max')
+            return;
+        this.employees.push(name);
+        console.log(this.employees);
+    }
 }
 const accounting = new AccountingDepartment('d3', ['Luna']);
 accounting.addReport('Tera');
+accounting.addEmployee('good');
 accounting.printReports();
 //# sourceMappingURL=class.js.map
