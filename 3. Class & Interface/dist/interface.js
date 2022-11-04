@@ -28,4 +28,7 @@ class Niceman {
         console.log(`${pharse} from ${this.name}`);
     }
 }
+let add;
+add = (n1, n2) => n1 + n2;
+console.log(add(1, 2));
 //# sourceMappingURL=interface.js.map

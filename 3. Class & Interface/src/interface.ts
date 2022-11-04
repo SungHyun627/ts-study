@@ -54,3 +54,10 @@ class Niceman implements Greetable, Named {
     console.log(`${pharse} from ${this.name}`);
   }
 }
+
+interface AddFn {
+  (a: number, b: number): number;
+}
+let add: AddFn;
+add = (n1: number, n2: number) => n1 + n2;
+console.log(add(1, 2));
