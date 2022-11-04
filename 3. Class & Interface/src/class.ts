@@ -1,4 +1,5 @@
 class Department {
+  static fiscalYear = 2022;
   protected employees: string[] = [];
 
   constructor(private readonly id: string, public name: string) {}
@@ -13,6 +14,10 @@ class Department {
 
   printEmployeeInformation() {
     console.log(this.employees);
+  }
+
+  static createEmployee(name: string) {
+    return { name: name };
   }
 }
 
@@ -79,3 +84,6 @@ accounting.addEmployee('good');
 accounting.printReports();
 console.log(accounting.mostRecentReport);
 accounting.mostRecentReport = 'Here is the last report';
+
+const employee1 = Department.createEmployee('Max');
+console.log(employee1, Department.fiscalYear);

@@ -14,7 +14,11 @@ class Department {
     printEmployeeInformation() {
         console.log(this.employees);
     }
+    static createEmployee(name) {
+        return { name: name };
+    }
 }
+Department.fiscalYear = 2022;
 const marketing = new Department('d1', 'marketing');
 marketing.describe();
 marketing.addEmployee('Max');
@@ -67,4 +71,6 @@ accounting.addEmployee('good');
 accounting.printReports();
 console.log(accounting.mostRecentReport);
 accounting.mostRecentReport = 'Here is the last report';
+const employee1 = Department.createEmployee('Max');
+console.log(employee1, Department.fiscalYear);
 //# sourceMappingURL=class.js.map
